@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دانشجو نیوز | مصاحبه با رسول موسوی در مورد چالش‌های حقوقی شرکت‌های دانش‌بنیان</title>
+    <meta name="description" content="مصاحبه اختصاصی با رسول موسوی، وکیل پایه یک دادگستری و کارشناس ارشد حقوق تجارت بین‌الملل در مورد چالش‌های حقوقی شرکت‌های دانش‌بنیان">
+    <meta name="keywords" content="رسول موسوی, وکیل دادگستری, حقوق تجارت بین‌الملل, شرکت دانش‌بنیان, حقوق مالکیت فکری, صادرات محصولات دانش‌بنیان, انتقال فناوری">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        /* Professional Topbar */
+        .topbar {
+            background-color: #1a237e;
+            color: white;
+            padding: 0.7rem 0;
+            font-size: 0.9rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .topbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+        
+        .topbar-logo h1 {
+            font-size: 1.8rem;
+            color: white;
+        }
+        
+        .topbar-logo span {
+            color: #ffc107;
+        }
+        
+        .topbar-datetime {
+            font-size: 0.9rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #3949ab;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 1.5rem;
+            position: relative;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem 0;
+            display: block;
+        }
+        
+        .nav-links a:hover {
+            color: #ffc107;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffc107;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .search-bar {
+            display: flex;
+        }
+        
+        .search-bar input {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            width: 200px;
+            transition: all 0.3s;
+        }
+        
+        .search-bar input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #ffc107;
+        }
+        
+        .search-bar button {
+            background-color: #ffc107;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            color: #333;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .search-bar button:hover {
+            background-color: #ffb300;
+        }
+        
+        /* Breaking News */
+        .breaking-news {
+            background-color: #e53935;
+            color: white;
+            padding: 0.7rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .breaking-news::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%);
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        
+        .breaking-news span {
+            background-color: #b71c1c;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            margin-left: 1rem;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+        
+        /* Featured News - Updated with Interview */
+        .featured-news {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .main-news {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .main-news:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .main-news img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .main-news:hover img {
+            transform: scale(1.05);
+        }
+        
+        .main-news-content {
+            padding: 1.5rem;
+        }
+        
+        .main-news h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1a237e;
+        }
+        
+        .main-news p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background-color: #3949ab;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        
+        .read-more:hover {
+            background-color: #283593;
+            transform: translateY(-2px);
+        }
+        
+        .side-news {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .side-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .side-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .side-item img {
+            width: 100px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        
+        .side-item h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Interview Section */
+        .interview-section {
+            grid-column: 1 / -1;
+            background: white;
+            border-radius: 10px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            border-right: 5px solid #3949ab;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .interview-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #1a237e, #3949ab, #1a237e);
+        }
+        
+        .interview-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .interview-title {
+            color: #1a237e;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .interview-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 50%;
+            transform: translateX(50%);
+            width: 100px;
+            height: 3px;
+            background-color: #ffc107;
+        }
+        
+        .interview-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* استایل‌های به‌روز شده برای بخش پروفایل */
+        .expert-profile {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f3f4f6;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .expert-profile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        
+        .expert-img {
+            width: 200px;
+            height: 240px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 4px solid #3949ab;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .expert-img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        
+        .expert-info h3 {
+            color: #1a237e;
+            margin-bottom: 0.8rem;
+            font-size: 1.5rem;
+        }
+        
+        .expert-title {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .expert-bio {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        .question {
+            color: #d32f2f;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.1rem;
+            padding-right: 1rem;
+            border-right: 3px solid #d32f2f;
+            position: relative;
+        }
+        
+        .question::before {
+            content: 'سوال:';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #d32f2f;
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        
+        .answer {
+            color: #333;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            line-height: 1.8;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-right: 3px solid #3949ab;
+        }
+        
+        .highlight-box {
+            background: #e3f2fd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-right: 4px solid #3949ab;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background: #1a237e;
+        }
+        
+        .highlight-box h4 {
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .highlight-box h4::before {
+            content: '💡';
+        }
+        
+        .key-points {
+            background: #fff8e1;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .key-points::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #ffc107, #ff9800, #ffc107);
+        }
+        
+        .key-points h3 {
+            color: #ff8f00;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        
+        .points-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .point-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .point-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        
+        .point-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background: #3949ab;
+        }
+        
+        .point-item h4 {
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .point-item h4::before {
+            content: '✓';
+            color: #4caf50;
+            font-weight: bold;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #1a237e, #283593);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: cover;
+        }
+        
+        .contact-box h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .contact-info {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            direction: ltr;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* News Categories */
+        .news-category {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .news-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #1a237e, #3949ab, #1a237e);
+        }
+        
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .category-header h2 {
+            color: #1a237e;
+            font-size: 1.3rem;
+        }
+        
+        .see-all {
+            color: #3949ab;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .see-all:hover {
+            color: #1a237e;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .news-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: white;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .news-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .news-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .news-card-content {
+            padding: 1rem;
+        }
+        
+        .news-card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        
+        .news-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #999;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .sidebar-widget {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .sidebar-widget::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #1a237e, #3949ab, #1a237e);
+        }
+        
+        .sidebar-widget h3 {
+            color: #1a237e;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .events-list, .important-links {
+            list-style: none;
+        }
+        
+        .events-list li, .important-links li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: padding-right 0.3s;
+        }
+        
+        .events-list li:hover, .important-links li:hover {
+            padding-right: 10px;
+        }
+        
+        .events-list li:last-child, .important-links li:last-child {
+            border-bottom: none;
+        }
+        
+        .events-list a, .important-links a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: block;
+        }
+        
+        .events-list a:hover, .important-links a:hover {
+            color: #3949ab;
+        }
+        
+        .event-date {
+            display: block;
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a237e;
+            color: white;
+            padding: 3rem 0 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #ffc107, #ff9800, #ffc107);
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #ffc107;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 2px;
+            background-color: #ffc107;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+            transition: transform 0.3s;
+        }
+        
+        .footer-links li:hover {
+            transform: translateX(-5px);
+        }
+        
+        .footer-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #ffc107;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: #3949ab;
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #b0b0b0;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #3949ab;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background: #1a237e;
+            transform: translateY(-3px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .featured-news {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .points-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-links {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .expert-profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .interview-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .expert-img {
+                width: 100%;
+                max-width: 280px;
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Professional Topbar -->
+    <div class="topbar">
+        <div class="topbar-container">
+            <div class="topbar-logo">
+                <h1>دانشجو <span>نیوز</span></h1>
+            </div>
+            <div class="topbar-datetime" id="datetime">
+                <!-- JavaScript will populate this -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> صفحه اصلی</a></li>
+                <li><a href="#"><i class="fas fa-university"></i> اخبار دانشگاه‌ها</a></li>
+                <li><a href="#"><i class="fas fa-flask"></i> علم و فناوری</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> فرهنگی و اجتماعی</a></li>
+                <li><a href="#"><i class="fas fa-running"></i> ورزشی</a></li>
+                <li><a href="#"><i class="fas fa-file-alt"></i> مقالات</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> درباره ما</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="جستجوی اخبار...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Breaking News -->
+    <div class="container">
+        <div class="breaking-news">
+            <span>خبر فوری</span>
+            <div id="breaking-news-text">مصاحبه اختصاصی با رسول موسوی وکیل برجسته در مورد چالش‌های حقوقی شرکت‌های دانش‌بنیان</div>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Featured News -->
+        <div class="featured-news">
+            <div class="main-news">
+                <img src="https://elitecenteriran.com/wp-content/uploads/2024/05/Daneshbonyan_Logo-1.png" alt="شرکت‌های دانش‌بنیان">
+                <div class="main-news-content">
+                    <h2>گفت‌وگوی ویژه با رسول موسوی در مورد حقوق شرکت‌های دانش‌بنیان</h2>
+                    <p>در گفت‌وگوی اختصاصی با دانشجو نیوز، رسول موسوی وکیل برجسته دادگستری و متخصص حقوق تجارت بین‌الملل، به بررسی مهم‌ترین چالش‌های حقوقی شرکت‌های دانش‌بنیان ایرانی در بازارهای جهانی پرداخت.</p>
+                    <a href="#interview" class="read-more">مشاهده کامل مصاحبه <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+            
+            <div class="side-news">
+                <div class="side-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/University_of_Tehran_central_library.jpg/800px-University_of_Tehran_central_library.jpg" alt="کتابخانه مرکزی دانشگاه تهران">
+                    <div>
+                        <h3>اعلام نتایج المپیاد علمی دانشجویی</h3>
+                        <p>نتایج مرحله نهایی المپیاد علمی دانشجویی در رشته‌های مختلف اعلام شد.</p>
+                    </div>
+                </div>
+                <div class="side-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Sharif_University_of_Technology_-_Central_Library.jpg/800px-Sharif_University_of_Technology_-_Central_Library.jpg" alt="کتابخانه دانشگاه صنعتی شریف">
+                    <div>
+                        <h3>برگزاری کارگاه مهارت‌های نرم برای دانشجویان</h3>
+                        <p>مرکز مشاوره دانشگاه تهران کارگاه‌های مهارت‌های نرم برگزار می‌کند.</p>
+                    </div>
+                </div>
+                <div class="side-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Amirkabir_University_of_Technology_main_gate.jpg/800px-Amirkabir_University_of_Technology_main_gate.jpg" alt="در اصلی دانشگاه امیرکبیر">
+                    <div>
+                        <h3>افتتاح کتابخانه دیجیتال در دانشگاه شیراز</h3>
+                        <p>کتابخانه دیجیتال با بیش از ۱۰۰ هزار عنوان کتاب الکترونیکی افتتاح شد.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Interview Section -->
+        <section id="interview" class="interview-section">
+            <div class="interview-header">
+                <h1 class="interview-title">مصاحبه اختصاصی با رسول موسوی: چالش‌های حقوقی شرکت‌های دانش‌بنیان در عرصه بین‌الملل</h1>
+                <div class="interview-meta">
+                    <span><i class="far fa-calendar-alt"></i> تاریخ انتشار: ۲۵ آذر ۱۴۰۲</span>
+                    <span><i class="far fa-folder"></i> دسته‌بندی: حقوق و تجارت</span>
+                    <span><i class="far fa-newspaper"></i> منبع: دانشجو نیوز</span>
+                </div>
+            </div>
+            
+            <div class="expert-profile">
+                <img src="https://raw.githubusercontent.com/Daneshjo-Khabari-ir/sherakat/main/photo_2025-11-23_00-55-27.jpg" alt="رسول موسوی" class="expert-img">
+                <div class="expert-info">
+                    <h3>رسول موسوی</h3>
+                    <div class="expert-title">وکیل پایه یک دادگستری | کارشناس ارشد حقوق تجارت بین‌الملل</div>
+                    <p class="expert-bio">دارای بیش از ۱۵ سال سابقه فعالیت در زمینه حقوق تجارت بین‌الملل، مشاور حقوقی چندین شرکت دانش‌بنیان و استارتاپ موفق. ایشان در زمینه حقوق مالکیت فکری و قراردادهای بین‌المللی تخصص دارند و تاکنون در پرونده‌های متعددی از شرکت‌های ایرانی در عرصه بین‌المللی دفاع کرده‌اند.</p>
+                </div>
+            </div>
+
+            <div class="interview-content">
+                <div class="question">آقای موسوی، مهم‌ترین چالش‌های حقوقی که شرکت‌های دانش‌بنیان ایرانی در صادرات محصولات با آن مواجه هستند چیست؟</div>
+                
+                <div class="answer">
+                    <p>شرکت‌های دانش‌بنیان ما با چند چالش عمده حقوقی در عرصه بین‌الملل روبرو هستند. اولین و مهم‌ترین مسئله، 
+                    <strong>حقوق مالکیت فکری</strong> است. بسیاری از این شرکت‌ها بدون ثبت بین‌المللی اختراعات و نوآوری‌های خود وارد بازارهای جهانی می‌شوند 
+                    که این امر منجر به نقض حقوق مالکیت معنوی و خسارات مالی سنگین می‌شود.</p>
+                    
+                    <p>دومین چالش، <strong>عدم آشنایی با قوانین تجاری کشورهای هدف</strong> است. هر کشور قوانین خاص خود را در زمینه استانداردهای محصولات، 
+                    مسئولیت‌های تولیدکننده و قوانین گمرکی دارد که عدم رعایت آنها می‌تواند منجر به محکومیت‌های سنگین شود.</p>
+                    
+                    <div class="highlight-box">
+                        <h4>نکته کلیدی:</h4>
+                        <p>ثبت بین‌المللی اختراعات از طریق سیستم PCT و آشنایی با قوانین local کشورهای هدف، 
+                        دو رکن اساسی موفقیت شرکت‌های دانش‌بنیان در بازارهای جهانی است.</p>
+                    </div>
+                </div>
+
+                <div class="question">در مورد قوانین بین‌المللی انتقال فناوری، چه توصیه‌ای برای شرکت‌های دانش‌بنیان دارید？</div>
+                
+                <div class="answer">
+                    <p>قوانین انتقال فناوری یکی از پیچیده‌ترین مباحث حقوق تجارت بین‌الملل است. شرکت‌های دانش‌بنیان باید در 
+                    <strong>قراردادهای انتقال فناوری</strong> به چند نکته اساسی توجه کنند:</p>
+                    
+                    <ul style="margin-right: 2rem; margin-bottom: 1rem;">
+                        <li>تعیین دقیق محدوده حقوق انتقال یافته</li>
+                        <li>شروط محرمانگی و عدم افشا</li>
+                        <li>حقوق مالکیت فکری در توسعه‌های آتی</li>
+                        <li>شروط حل و فصل اختلافات</li>
+                    </ul>
+                    
+                    <p>بسیار مهم است که این قراردادها توسط وکلای متخصص در حوزه حقوق فناوری بررسی شوند تا از بروز اختلافات آتی جلوگیری شود.</p>
+                </div>
+
+                <div class="question">برای حمایت از اختراعات و نوآوری‌های دانشجویی چه مکانیزم‌های حقوقی وجود دارد？</div>
+                
+                <div class="answer">
+                    <p>حمایت از نوآوری‌های دانشجویی نیازمند یک <strong>سیستم جامع حقوقی</strong> است. اولین قدم، ثبت اختراع در سطح ملی است 
+                    که باید بلافاصله پس از تکمیل پژوهش انجام شود. سپس می‌توان با استفاده از معاهده همکاری ثبت اختراع (PCT) 
+                    حمایت بین‌المللی به دست آورد.</p>
+                    
+                    <p>همچنین توصیه می‌کنم دانشگاه‌ها <strong>دفاتر انتقال فناوری</strong> تأسیس کنند تا بتوانند به صورت تخصصی 
+                    از حقوق مالکیت فکری دانشجویان و پژوهشگران حمایت کنند.</p>
+                </div>
+            </div>
+
+            <!-- Key Points -->
+            <div class="key-points">
+                <h3>نکات کلیدی مصاحبه</h3>
+                <div class="points-grid">
+                    <div class="point-item">
+                        <h4>ثبت بین‌المللی اختراعات</h4>
+                        <p>استفاده از سیستم PCT برای ثبت جهانی اختراعات و جلوگیری از نقض حقوق مالکیت فکری</p>
+                    </div>
+                    <div class="point-item">
+                        <h4>مطالعه قوانین محلی</h4>
+                        <p>آشنایی با قوانین تجاری و استانداردهای هر کشور قبل از ورود به بازارهای بین‌المللی</p>
+                    </div>
+                    <div class="point-item">
+                        <h4>قراردادهای انتقال فناوری</h4>
+                        <p>تنظیم دقیق قراردادها با مشاوره وکلای متخصص در حوزه فناوری</p>
+                    </div>
+                    <div class="point-item">
+                        <h4>حمایت دانشگاه‌ها</h4>
+                        <p>ایجاد دفاتر انتقال فناوری در دانشگاه‌ها برای حمایت از نوآوری‌های دانشجویی</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Box -->
+            <div class="contact-box">
+                <h3>برای ارتباط با دانشجو نیوز</h3>
+                <div class="contact-info">۰۲۱ - ۵۵۱۰۴</div>
+                <p>آدرس: خیابان انقلاب ، خیابان شهید برزگر ، پلاک 118 طبقه 3</p>
+            </div>
+        </section>
+        
+        <!-- News Categories -->
+        <div class="news-category">
+            <div class="category-header">
+                <h2>آخرین اخبار دانشگاه‌ها</h2>
+                <a href="#" class="see-all">مشاهده همه <i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="https://media.mehrnews.com/d/2023/11/19/4/4810625.jpg" alt="کنفرانس بین‌المللی هوش مصنوعی در دانشگاه تهران">
+                    <div class="news-card-content">
+                        <h3>برگزاری کنفرانس بین‌المللی هوش مصنوعی</h3>
+                        <p>کنفرانس بین‌المللی هوش مصنوعی با حضور اساتید برجسته از سراسر جهان در دانشگاه تهران برگزار شد.</p>
+                        <div class="news-meta">
+                            <span>۲ ساعت پیش</span>
+                            <span>۱۵۲ بازدید</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://media.mehrnews.com/d/2023/10/15/4/4785432.jpg" alt="استارتاپ دانشجویی در دانشگاه صنعتی شریف">
+                    <div class="news-card-content">
+                        <h3>رونمایی از استارتاپ دانشجویی در حوزه سلامت</h3>
+                        <p>تیم دانشجویی دانشگاه صنعتی شریف از استارتاپ خود در حوزه سلامت دیجیتال رونمایی کرد.</p>
+                        <div class="news-meta">
+                            <span>۵ ساعت پیش</span>
+                            <span>۹۸ بازدید</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://media.mehrnews.com/d/2023/09/22/4/4768910.jpg" alt="مرکز نوآوری دانشگاه امیرکبیر">
+                    <div class="news-card-content">
+                        <h3>افتتاح مرکز نوآوری و فناوری</h3>
+                        <p>مرکز نوآوری و فناوری دانشگاه امیرکبیر با هدف حمایت از ایده‌های نوآورانه دانشجویان افتتاح شد.</p>
+                        <div class="news-meta">
+                            <span>۱ روز پیش</span>
+                            <span>۲۱۰ بازدید</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-widget">
+                <h3>رویدادهای آینده</h3>
+                <ul class="events-list">
+                    <li>
+                        <a href="#">همایش سالانه انجمن علمی کامپیوتر</a>
+                        <span class="event-date">۱۴۰۲/۰۹/۲۰ - سالن همایش‌های مرکزی</span>
+                    </li>
+                    <li>
+                        <a href="#">کارگاه آموزشی روش تحقیق</a>
+                        <span class="event-date">۱۴۰۲/۰۹/۲۵ - دانشکده علوم انسانی</span>
+                    </li>
+                    <li>
+                        <a href="#">جشنواره فرهنگی و هنری دانشجویان</a>
+                        <span class="event-date">۱۴۰۲/۱۰/۰۵ - پردیس مرکزی دانشگاه</span>
+                    </li>
+                    <li>
+                        <a href="#">مسابقه برنامه‌نویسی ACM</a>
+                        <span class="event-date">۱۴۰۲/۱۰/۱۵ - دانشکده مهندسی</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>لینک‌های مهم</h3>
+                <ul class="important-links">
+                    <li><a href="#"><i class="fas fa-link"></i> سامانه آموزشی دانشگاه</a></li>
+                    <li><a href="#"><i class="fas fa-link"></i> کتابخانه دیجیتال</a></li>
+                    <li><a href="#"><i class="fas fa-link"></i> مرکز مشاوره دانشجویی</a></li>
+                    <li><a href="#"><i class="fas fa-link"></i> انجمن‌های علمی</a></li>
+                    <li><a href="#"><i class="fas fa-link"></i> باشگاه پژوهشگران جوان</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Science and Technology News -->
+        <div class="news-category">
+            <div class="category-header">
+                <h2>علم و فناوری</h2>
+                <a href="#" class="see-all">مشاهده همه <i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="https://media.isna.ir/d/2023/11/12/3/74837615.jpg" alt="تحقیقات سلول‌های بنیادی در ایران">
+                    <div class="news-card-content">
+                        <h3>کشف جدید محققان ایرانی در حوزه سلول‌های بنیادی</h3>
+                        <p>تیم تحقیقاتی دانشکده پزشکی دانشگاه علوم پزشکی تهران به دستاورد مهمی در زمینه سلول‌های بنیادی دست یافتند.</p>
+                        <div class="news-meta">
+                            <span>۳ روز پیش</span>
+                            <span>۳۴۵ بازدید</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://media.isna.ir/d/2023/10/25/3/74789234.jpg" alt="ربات کمک‌آموز برای کودکان اوتیسم">
+                    <div class="news-card-content">
+                        <h3>طراحی ربات کمک‌آموز برای کودکان اوتیسم</h3>
+                        <p>دانشجویان مهندسی پزشکی دانشگاه صنعتی اصفهان رباتی برای کمک به آموزش کودکان مبتلا به اوتیسم طراحی کردند.</p>
+                        <div class="news-meta">
+                            <span>۴ روز پیش</span>
+                            <span>۲۸۷ بازدید</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>درباره ما</h3>
+                <p>دانشجو نیوز با هدف اطلاع‌رسانی دقیق و به‌روز از اخبار دانشگاه‌ها، رویدادهای علمی و مسائل مربوط به جامعه دانشجویی فعالیت می‌کند.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>لینک‌های سریع</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-angle-left"></i> صفحه اصلی</a></li>
+                    <li><a href="#"><i class="fas fa-angle-left"></i> اخبار دانشگاه‌ها</a></li>
+                    <li><a href="#"><i class="fas fa-angle-left"></i> علم و فناوری</a></li>
+                    <li><a href="#"><i class="fas fa-angle-left"></i> فرهنگی و اجتماعی</a></li>
+                    <li><a href="#"><i class="fas fa-angle-left"></i> ورزشی</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>خدمات</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-angle-left"></i> آرشیو خبری</a></li>
+                    <li><a href="#"><i class="fas fa-angle-left"></i> نشریه الکترونیکی</a></li>
+                    <li><a href="#"><i class="fas fa-angle-left"></i> پادکست‌های آموزشی</a></li>
+                    <li><a href="#"><i class="fas fa-angle-left"></i> فرصت‌های شغلی</a></li>
+                    <li><a href="#"><i class="fas fa-angle-left"></i> مسابقات و جشنواره‌ها</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>تماس با ما</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> آدرس: خیابان انقلاب ، خیابان شهید برزگر ، پلاک 118 طبقه 3</li>
+                    <li><i class="fas fa-phone"></i> تلفن: ۰۲۱ - ۵۵۱۰۴</li>
+                    <li><i class="fas fa-envelope"></i> ایمیل: info@studentnews.ir</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>کلیه حقوق این سایت متعلق به دانشجو نیوز می‌باشد. © ۱۴۰۲</p>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <script>
+        // Update date and time
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                weekday: 'long'
+            };
+            const dateString = now.toLocaleDateString('fa-IR', options);
+            const timeString = now.toLocaleTimeString('fa-IR');
+            document.getElementById('datetime').textContent = `${dateString} - ${timeString}`;
+        }
+        
+        // Update immediately and then every minute
+        updateDateTime();
+        setInterval(updateDateTime, 60000);
+        
+        // Breaking news ticker
+        const breakingNews = [
+            "مصاحبه اختصاصی با رسول موسوی وکیل برجسته در مورد چالش‌های حقوقی شرکت‌های دانش‌بنیان",
+            "اعلام اسامی پذیرفته شدگان بدون آزمون کارشناسی ارشد",
+            "برگزاری نمایشگاه دستاوردهای پژوهشی دانشجویان در هفته پژوهش",
+            "افتتاح خوابگاه جدید دانشگاه علم و صنعت با ظرفیت ۵۰۰ دانشجو"
+        ];
+        
+        let currentNewsIndex = 0;
+        const breakingNewsElement = document.getElementById('breaking-news-text');
+        
+        function changeBreakingNews() {
+            currentNewsIndex = (currentNewsIndex + 1) % breakingNews.length;
+            breakingNewsElement.textContent = breakingNews[currentNewsIndex];
+        }
+        
+        // Change breaking news every 10 seconds
+        setInterval(changeBreakingNews, 10000);
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
